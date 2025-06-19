@@ -1,10 +1,11 @@
-# main.py
-import sys
+## 📄 `main.py`
+```python
 from PyQt6.QtWidgets import QApplication
-from quicktrade import QuickTradeMainWindow
+import sys
+from quicktrade import QuickTradeApp
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    window = QuickTradeMainWindow()
+    window = QuickTradeApp()
     window.show()
     sys.exit(app.exec())
